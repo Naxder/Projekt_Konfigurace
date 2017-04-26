@@ -1,0 +1,224 @@
+{
+    "konfigurace": {
+        "obrazovka": {
+            "width": {
+                "-units": "px",
+                "#text": "1200"
+            },
+            "height": {
+                "-units": "px",
+                "#text": "800"
+            },
+            "oriantation": "vertical"
+        },
+        "menu": {
+            "positon": "left",
+            "width": {
+                "-units": "px",
+                "#text": "1000"
+            },
+            "height": {
+                "-units": "px",
+                "#text": "650"
+            },
+            "color": {
+                "-description": "",
+                "#text": "##FFFFFF"
+            }
+        },
+        "obecne": {
+            "applanguage": {
+                "-abbreviation": "EN",
+                "-country": "USA",
+                "#text": "English"
+            },
+            "startuplaunch": {
+                "-enable": "true",
+                "#text": "Start app when you start your computer"
+            },
+            "multipleinstances": {
+                "-enable": "false",
+                "#text": "Allow multiple instances of app"
+            },
+            "exit": "exit app after clicking 'X' at the top of window",
+            "afterlaunch": "keep app running after launch a game",
+            "security": {
+                "remememail": {
+                    "-enable": "true",
+                    "#text": "Remember email address"
+                },
+                "keeplog": {
+                    "-enable": "true",
+                    "#text": "Keep me logged in"
+                }
+            },
+            "advanced": {
+                "browseracceleration": {
+                    "-enable": "true",
+                    "#text": "Use browser hardware acceleration when available"
+                }
+            }
+        },
+        "zvukAnotifikace": {
+            "apptoasts": {
+                "-enable": "true",
+                "#text": "Enable app toasts"
+            },
+            "zvuk": {
+                "-enable": "true",
+                "#text": "Enable Sound"
+            },
+            "whenplayinggame": {
+                "hidetoasts": {
+                    "-enable": "true",
+                    "#text": "Hide toasts"
+                },
+                "pop-up": {
+                    "-enable": "true",
+                    "#text": "Don't pop-up new chat windows"
+                },
+                "mute": {
+                    "-enable": "true",
+                    "#text": "mute whisper and friend sound notifications"
+                }
+            },
+            "usingapp": {
+                "hidetoasts": {
+                    "-enable": "true",
+                    "#text": "Hide toasts"
+                }
+            }
+        },
+        "prateleAchat": {
+            "pratele": {
+                "realname": {
+                    "-enable": "false",
+                    "#text": "Show your real name"
+                },
+                "suggfriends": {
+                    "-enable": "true",
+                    "#text": "Show friend suggestions"
+                }
+            },
+            "chat": {
+                "flashalert": {
+                    "-enable": "true",
+                    "#text": "Enable app toasts"
+                },
+                "filtermature": {
+                    "-enable": "true",
+                    "#text": "Filtr mature language"
+                },
+                "typing": {
+                    "-enable": "true",
+                    "#text": "show when you are typing"
+                }
+            }
+        },
+        "streaming": {
+            "allow": {
+                "-enable": "true",
+                "#text": "Enable streaming"
+            },
+            "hotkeys": {
+                "start": "crtl+f1",
+                "stop": "crtl+f1",
+                "pause": "ctrl+f2"
+            },
+            "audio": {
+                "-enable": "false"
+            },
+            "ingameoverlay": {
+                "overlays": {
+                    "-enable": "true",
+                    "#text": "show in-game overlays"
+                },
+                "streamstatus": {
+                    "-enable": "true",
+                    "#text": "show stream status overlay"
+                }
+            },
+            "quality": "Medium (720p, 30fps, 3.0Mbps)"
+        },
+        "gamesettings": {
+            "game": [
+                {
+                    "-id": "1",
+                    "additional": {
+                        "-enable": "false",
+                        "#text": "Additional command line arguments"
+                    },
+                    "client32-bit": {
+                        "-enable": "false",
+                        "#text": "Launch 32-bit client (instead of 64-bit)"
+                    },
+                    "textlanguage": "English",
+                    "spokenlanguage": ""
+
+                }
+                ,
+                {
+                    "-id": "2",
+                    "additional": {
+                        "-enable": "false",
+                        "#text": "Additional command line arguments"
+                    },
+                    "client32-bit": {
+                        "-enable": "",
+                        "#text": ""
+                    },
+                    "textlanguage": "English",
+                    "spokenlanguage": ""
+
+                }
+                ,
+                {
+                    "-id": "3",
+                    "additional": {
+                        "-enable": "false",
+                        "#text": "Additional command line arguments"
+                    },
+                    "client32-bit": {
+                        "-enable": "false",
+                        "#text": "Launch 32-bit client (instead of 64-bit)"
+                    },
+                    "textlanguage": "English",
+                    "spokenlanguage": "English"
+
+                }
+                ,
+                {
+                    "-id": "",
+                    "additional": {
+                        "-enable": "true",
+                        "#text": "Additional command line arguments"
+                    },
+                    "client32-bit": {
+                        "-enable": "",
+                        "#text": ""
+                    },
+                    "textlanguage": "English",
+                    "spokenlanguage": "English"
+
+                }
+                ,
+                {
+                    "-id": "5",
+                    "additional": {
+                        "-enable": "false",
+                        "#text": "Additional command line arguments"
+                    },
+                    "client32-bit": {
+                        "-enable": "true",
+                        "#text": "Launch 32-bit client (instead of 64-bit)"
+                    },
+                    "textlanguage": "English",
+                    "spokenlanguage": "English"
+
+                }
+
+            ]
+        }
+    }
+}
+    

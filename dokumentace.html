@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8">
+			<title>Konfigurace aplikace</title>
+		</head>
+
+		<body>
+			<header>
+				<h1>Dokumentace</h1>
+				<h2>Navigace</h2>
+				<ul>
+					<li>
+						<a href="#Uvod">Úvod</a>
+					</li>
+					<li>
+						<a href="#xsd">XSD</a>
+					</li>
+					<li>
+						<a href="#xml">XML</a>
+					</li>
+          <li>
+						<a href="#Popis_tagu">Popis tagů</a>
+					</li>
+					<li>
+						<a href="#zdroje">Zdroje</a>
+					</li>
+					<li>
+						<a href="https://github.com/WidyGitHub/konfigurace">GitHub</a>
+					</li>
+
+				</ul>
+			</header>
+			<main>
+
+				<section id="Uvod">
+					<h2>Úvod</h2>
+					<p>Dokumentace vytvořená pro projekt nastavení aplikace v xml a jeho transformace. Projekt je vytvořen pro potřebu předmětu Značkovací jazyky</p>
+				</section>
+
+				<section id="xsd">
+					<h2>Popis xsd</h2>
+					<p>XSD je je předpis pro XML. Pro definování rozhrní je tvořeno wsdl, kde jsou použitava xsd pro definici každého rozhraní.</p>
+					<h3>Vypis xsd type</h3>
+					<ul>
+						<li>string - v xml tagu s tímto typem tagu bude očekáván textový řetězec</li>
+						<li>positiveInteger - v xml tagu s tímto typem bude očekáváno pouze kladné celé číslo</li>
+						<li>text2 - v xml tagu s tímto typem bude očekáván textový řetězec od dnou znacích (UK,CZ,DE...) </li>
+						<li>urlText - v xml tagu s tímto type bude očekávána validní url adrese, dle regularního výrazu</li>
+					</ul>
+
+				</section>
+				<section id="xml">
+					<h2>Popis Atributy xml</h2>
+					<p>Atributy často přenášejí informace, které nejsou částí dat. V příkladu dole, typ souboru je vzhledem k datům bezvýznamný, ale mohl by být důležitý pro software, který s elementem manipuluje.</p>
+		      </section>
+    <section id="Popis_tagu">
+					<h2>Popis tagu xml</h2>
+					<table border="1">
+						<tr>
+							<th>Tag</th>
+              <th>Typ</th>
+							<th>Popis</th>
+						</tr>
+						<tr>
+							<td>konfigurace</td>
+              <td></td>
+							<td>Základní tag</td>
+						</tr>
+						<tr>
+							<td>Obrazovka</td>
+               <td></td>
+							<td>Tag pro skupinu tagů pojednávajících o zobrazení</td>
+						</tr>
+						<tr>
+							<td>width</td>
+              <td>xs:short</td>
+							<td>Nastavení šířky obrazovky</td>
+						</tr>
+						<tr>
+							<td>height</td>
+              <td>xs:short</td>
+							<td>Nastavení výšky obrazu</td>
+						</tr>
+						<tr>
+							<td>Orientation</td>
+							<td>xs:string</td>
+							<td>Nastavení orientace okna</td>
+						</tr>
+						<tr>
+							<td>menu</td>
+               <td></td>
+							<td>Tag sloučující skupinu tagů pro menu</td>
+						</tr>
+						<tr>
+							<td>position</td>
+							<td>xs:string</td> 
+							<td>Upřesnění pozice menu (left, center, right)</td>
+						</tr>
+						<tr>
+							<td>width</td>
+              <td>xs:short</td>
+							<td>Nastavení šířky menu</td>
+						</tr>
+						<tr>
+							<td>height</td>
+              <td>xs:short</td>
+							<td>Nastavení výšky menu</td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td>xs:string</td>
+							<td>Nastavení barvy textu menu (různé barvy zadané pomocí hexa kódu)</td>
+						</tr>
+						<tr>
+							<td>obecné</td>
+               <td></td>
+							<td>Tag sloučující tagy obsahující hodnoty nastavení menu pro obecné nastavení</td>
+						</tr>
+						<tr>
+							<td>applanguage</td>
+							<td>xs:string</td>
+							<td>Nastavení jazyka aplikace může obsahovat všechny dostupné jazyky (CZ/EN/RU/...)</td>
+						</tr>
+						<tr>
+							<td>startuplaunch</td>
+							<td>xs:string</td>
+							<td>Nastavení, zda se má aplikace spustit při zapnutí počítače</td>
+						</tr>
+						<tr>
+							<td>multipleinstances</td>
+							<td>xs:string</td>
+							<td>Nastavení možnosti mít aplikaci spuštěnou ve vícech oknech</td>
+						</tr>
+						<tr>
+							<td>exit</td>
+							<td>xs:string</td> 
+							<td>Nastavení akce po stisknutí ikonky "X" v horním rohu aplikace. Nabývá hodnot (exit/minimalize)</td>
+						</tr>
+						<tr>
+							<td>afterlaunch</td>
+							<td>xs:string</td> 
+							<td>Nastavení akce aplikace po spuštění hry(exit/minimalize/minimalize in tray/keep run)</td>
+						</tr>
+						<tr>
+							<td>security</td>
+               <td></td>
+							<td>Tag sloučující tagy obsahující hodnoty nastavení menu zabezpečení</td>
+						</tr>                        
+						<tr>
+							<td>remememail</td>
+							<td>xs:string</td>
+							<td>Nastavení zda si má aplikace zapamatovat vaši emailovou adresu</td>
+						</tr>
+						<tr>
+							<td>keeplog</td>
+							<td>xs:string</td>
+							<td>Nastavení zda má uživatel být trvale přihlášen k aplikaci</td>
+						</tr>
+						<tr>
+							<td>advanced</td>
+               <td></td>
+							<td>Skupina pro nastavení "pokročilého" zabezpečení</td>
+						</tr>
+						<tr>
+							<td>browseracceleration</td>
+							<td>xs:string</td>
+							<td>Možnost pro využití browser acceleration</td>
+						</tr>
+						<tr>
+							<td>zvukAnotifikace</td>
+              <td></td>
+							<td>Skupina pro nastavení zvuku a notifikací</td>
+						</tr>
+						<tr>
+							<td>apptoasts</td>
+							<td>xs:string</td> 
+							<td>Tag pro povolení app toasts</td>
+						</tr>
+						<tr>
+							<td>zvuk</td>
+							<td>xs:string</td> 
+							<td>Tag pro zapnutí a vypnustí zvuků aplikace</td>
+						</tr>
+						<tr>
+							<td>whenplayinggame</td>
+               <td></td>
+							<td>Tag slučují skupinu nastavení toho co se má stát, když je spuštěna hra</td>
+						</tr>
+						<tr>
+							<td>hidetoasts</td>
+							<td>xs:string</td> 
+							<td>Nastavení při jakých eventách skrývat toasts zprávy</td>
+						</tr>
+						<tr>
+							<td>pop-up</td>
+               <td></td>
+							<td>Tag pro nastavení pop-up oken</td>
+						</tr>
+						<tr>
+							<td>mute</td>
+							<td>xs:string</td>
+							<td>Tag pro nastavení kdy má aplikace "mlčet"</td>
+						</tr>
+						<tr>
+							<td>usingapp</td>
+               <td></td>
+							<td>Skupina pro nastavení co se stane, když používam appku</td>
+						</tr>
+						<tr>
+							<td>hidetoasts</td>
+							<td>xs:string</td>
+							<td>Skrýt toasts když používám appku</td>
+						</tr>
+						<tr>
+							<td>prateleAchat</td>
+               <td></td>
+							<td>Skupina pro nastavení přátelé a chat</td>
+						</tr>
+						<tr>
+							<td>pratele</td>
+               <td></td>
+							<td>Skupina pro nastavení přátel</td>
+						</tr>
+						<tr>
+							<td>realname</td>
+              <td>xs:string</td>
+							<td>nastavení pro zobrazení vašeho skutečného jména</td> 
+						</tr>
+						<tr>
+							<td>suggfriends</td>
+							<td>xs:string</td>
+							<td>Nastavení, zda zobrazovat návrhy přátel</td>
+						</tr>
+						<tr>
+							<td>chat</td>
+               <td></td>
+							<td>Skupina pro nastavení chatu</td>
+						</tr>
+						<tr>
+							<td>flashalert</td>
+							<td>xs:string</td> 
+							<td>Tag pro nastavení, zda má klient blikat při příchozí zprávě</td>
+						</tr>
+						<tr>
+							<td>filtermature</td>
+							<td>xs:string</td>
+							<td>Tag pro filtrování nevhodných slov ve zprávách</td>
+						</tr>
+						<tr>
+							<td>typing</td>
+							<td>xs:string</td> 
+							<td>Nastavení zda se má zobrazit když píšete zprávu</td>
+						</tr>	                     			
+						<tr>
+							<td>streaming</td>
+							<td></td>
+							<td>Skupina pro nastavení streamu</td>
+						</tr> 
+						<tr>
+							<td>allow</td>
+							<td>xs:string</td>
+							<td>Nastavení zda má být stream povolen, nebo zakázán</td>
+						</tr>
+						<tr>
+							<td>hotkeys</td>
+              <td></td>
+							<td>Skupina pro nastavení hotkeys</td>
+						</tr>
+						<tr>
+							<td>start</td>
+							<td>xs:string</td>
+							<td>Tag pro zapnutí streamu</td>
+						</tr>
+            <tr>
+							<td>stop</td>
+							<td>xs:string</td>
+							<td>Tag pro vypnutí streamu</td>
+						</tr>
+            <tr>
+							<td>pause</td>
+							<td>xs:string</td>
+							<td>Tag pro pauzu streamu</td>
+						</tr>
+						<tr>
+							<td>audio</td>
+							<td>xs:string</td>
+							<td>Nastavení pro zvuky streamu</td>
+						</tr>
+						<tr>
+							<td>ingameoverlay</td>
+							<td></td>
+							<td>Skupina pro nastavení overlays streamu</td>
+						</tr>
+						<tr>
+							<td>overlays</td>
+							<td>xs:string</td>
+							<td>Nastavení umístění overlays</td>
+						</tr>
+            <tr>
+							<td>streamstatus</td>
+							<td>xs:string</td>
+							<td>Nastavení oznámení o statusu streamu</td>
+						</tr>
+            <tr>
+							<td>quality</td>
+							<td>xs:string</td>
+							<td>Nastavení kvality streamu</td>
+						</tr>
+            <tr>
+							<td>gamesettings</td>
+							<td></td>
+							<td>Skupina nastavení pro jednotlivé hry</td>
+						</tr>
+            <tr>
+							<td>game</td>
+							<td></td>
+							<td>Tag pro konkrétní hru</td>
+						</tr>
+            <tr>
+							<td>additional</td>
+							<td>xs:string</td>
+							<td>Nastavení dodatečných informací o hře</td>
+						</tr>
+            <tr>
+							<td>client32-bit</td>
+							<td>xs:string</td>
+							<td>Nastavení zda má hry spustit jako 32-bit aplikace, nebo jako 64-bit</td>
+						</tr>
+            <tr>
+							<td>textlanguage</td>
+							<td>xs:string</td>
+							<td>Nastavení jazyka pro text ve hře</td>
+						</tr>
+            <tr>
+							<td>spokenlanguage</td>
+							<td>xs:string</td>
+							<td>Nastavení jazyka pro mluvené slovo ve hře</td>
+              </tr>
+						
+					</table>
+				</section>
+
+				<section id="zdroje">
+					<h2>Zdroje</h2>
+					<ul>
+						<li>
+							HTML
+							<ul>
+								<li>
+									<a href="http://www.w3schools.com/html/default.asp">Syntaxe</a>
+								</li>
+
+								<li>
+									<a href="https://validator.w3.org/nu/#file">Validace</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="http://www.freeformatter.com/xml-validator-xsd.html">Validace xml vůči XSD</a>
+						</li>
+						<li>
+							<a href="http://xsd2xml.com/">Generator dat vůči xsd</a>
+						</li>
+						<li>
+							<a href="">Vlastní zkušenosti z transforamce xml souboru pro sepa platby</a>
+						</li>
+					</ul>
+				</section>
+			</main>
+			<footer>
+        &copy; Oldřich Barták
+			</footer>
+		</body>
+
+	</html>

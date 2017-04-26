@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="konfigurace.xsl"?>
+<konfigurace>
+	<obrazovka>
+		<width units="px">1200</width>
+		<height units="px">800</height>
+		<oriantation>vertical</oriantation>
+	</obrazovka>
+	<menu>
+		<positon>left</positon>
+		<width units="px">1000</width>
+		<height units="px">650</height>
+		<color description="Bila">##FFFFFF</color>
+	</menu>
+	<obecne>
+		<applanguage abbreviation="EN" country="USA">English</applanguage>
+		<startuplaunch enable="true">Start app when you start your computer</startuplaunch>
+		<multipleinstances enable="false">Allow multiple instances of app</multipleinstances>
+		<exit>exit app after clicking 'X' at the top of window</exit>
+		<afterlaunch>keep app running after launch a game</afterlaunch>
+		<security>
+			<remememail enable="true">Remember email address</remememail>
+			<keeplog enable="true">Keep me logged in</keeplog>
+		</security>
+		<advanced>
+			<browseracceleration enable="true">Use browser hardware acceleration when available</browseracceleration>
+		</advanced>
+	</obecne>
+	<zvukAnotifikace>
+		<apptoasts enable="true">Enable app toasts</apptoasts>
+		<zvuk enable="true">Enable Sound</zvuk>
+		<whenplayinggame>
+			<hidetoasts enable="true">Hide toasts</hidetoasts>
+			<pop-up enable="true">Don't pop-up new chat windows</pop-up>
+			<mute enable="true">mute whisper and friend sound notifications</mute>
+		</whenplayinggame>
+		<usingapp>
+			<hidetoasts enable="true">Hide toasts</hidetoasts>
+		</usingapp>
+	</zvukAnotifikace>
+	<prateleAchat>
+		<pratele>
+			<realname enable="false">Show your real name</realname>
+			<suggfriends enable="true">Show friend suggestions</suggfriends>
+		</pratele>
+		<chat>
+			<flashalert enable="true">Enable app toasts</flashalert>
+			<filtermature enable="true">Filtr mature language</filtermature>
+			<typing enable="true">show when you are typing</typing>
+		</chat>
+	</prateleAchat>
+	<streaming>
+		<allow enable="true">Enable streaming</allow>
+		<hotkeys>
+			<start>crtl+f1</start>
+			<stop>crtl+f1</stop>
+			<pause>ctrl+f2</pause>
+		</hotkeys>
+		<audio enable="false" />
+		<ingameoverlay>
+			<overlays enable="true">show in-game overlays</overlays>
+			<streamstatus enable="true">show stream status overlay</streamstatus>
+		</ingameoverlay>
+		<quality>Medium (720p, 30fps, 3.0Mbps)</quality>
+	</streaming>
+	<gamesettings>
+		<game id="1">
+			<additional enable="false">Additional command line arguments</additional>
+			<client32-bit enable="false">Launch 32-bit client (instead of 64-bit)</client32-bit>
+			<textlanguage>English</textlanguage>
+		</game>
+		<game id="2">
+			<additional enable="false">Additional command line arguments</additional>
+			<textlanguage>English</textlanguage>
+		</game>
+		<game id="3">
+			<additional enable="false">Additional command line arguments</additional>
+			<client32-bit enable="false">Launch 32-bit client (instead of 64-bit)</client32-bit>
+			<textlanguage>English</textlanguage>
+			<spokenlanguage>English</spokenlanguage>
+		</game>
+		<game>
+			<additional enable="true">Additional command line arguments</additional>
+			<textlanguage>English</textlanguage>
+			<spokenlanguage>English</spokenlanguage>
+		</game>
+		<game id="5">
+			<additional enable="false">Additional command line arguments</additional>
+			<client32-bit enable="true">Launch 32-bit client (instead of 64-bit)</client32-bit>
+			<textlanguage>English</textlanguage>
+			<spokenlanguage>English</spokenlanguage>
+		</game>
+	</gamesettings>
+</konfigurace>
